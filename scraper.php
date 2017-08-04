@@ -2,7 +2,9 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 
-$url = 'http://202.61.43.40:8080/index.php?r=site%2Fsearchbyvalue&page=';
+$url = 'http://google.com/';
+echo $url;
+/*
 for ($innerloop = 1; $innerloop <2; $innerloop++) 
 			{
 				$NewLink	=	$url  . $innerloop;
@@ -25,4 +27,5 @@ foreach($html->find("//*[@id='w0']/table/tbody/tr") as $element)
 					
 				}
 }
+*/
 ?>
