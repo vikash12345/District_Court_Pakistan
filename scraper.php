@@ -34,8 +34,10 @@ require "simple_html_dom.php";
 
 $site = 'http://202.61.43.40:8080/index.php?r=site%2Fsearchbyvalue&page=';
 //This is for Pagination 
-for($page = 0; $page < 1; $page++)
+for($page = 1; $page < 3; $page++)
     {
         $FinalURL = $site . $page;
-       echo  $html = file_get_html($FinalURL);
+        $html = file_get_html($FinalURL);
     }
+
+ echo  $html
