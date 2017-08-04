@@ -26,8 +26,9 @@
 // called "data".
 
 
+require 'scraperwiki/simple_html_dom.php';
+require 'scraperwiki.php';
 
-require "simple_html_dom.php";
 
 $site = 'http://202.61.43.40:8080/index.php?r=site%2Fsearchbyvalue&page=';
 //This is for Pagination 
