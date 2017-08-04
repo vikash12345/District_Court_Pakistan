@@ -30,30 +30,12 @@ require 'scraperwiki/simple_html_dom.php';
 require 'scraperwiki.php';
 
 
+require "simple_html_dom.php";
+
 $site = 'http://202.61.43.40:8080/index.php?r=site%2Fsearchbyvalue&page=';
 //This is for Pagination 
 for($page = 0; $page < 1; $page++)
     {
         $FinalURL = $site . $page;
-        $html = file_get_html($FinalURL);
+       echo  $html = file_get_html($FinalURL);
     }
-
-
-
-//This is for Table Scrapping
-foreach($html->find("//*[@id='w0']/table/tbody/tr") as $element) 
-	{
-
-	echo 	$num   = $element->find("td", 0);
-	echo	$courtname  = $element->find("td", 1);
-	echo	$caseno  = $element->find("td", 2);
-	echo	$status  = $element->find("td", 3);
-	echo	$href = $element->find(".//td/button", 0)->value;
-	}
-
-
-
-
-?>
-
-
