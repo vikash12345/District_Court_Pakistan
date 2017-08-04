@@ -2,8 +2,11 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 
-$url = 'http://google.com/';
-echo $url;
+
+$html = scraperwiki::scrape("http://google.com/);
+$dom = new simple_html_dom();
+ $dom->load($url);
+echo $dom;
 /*
 for ($innerloop = 1; $innerloop <2; $innerloop++) 
 			{
